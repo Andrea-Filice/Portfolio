@@ -6,7 +6,7 @@ I'm Andrea, a relentless and pragmatic developer passionate about automation, co
 
 - **Languages**: C#, Python, JavaScript, Java, HTML, CSS
 - **Frameworks**: .NET, Bootstrap, Electron
-- **CI/CD**: GitHub Actions, Makefile
+- **CI/CD**: GitHub Actions
 - **Analysis**: CodeQL, ESLint, Pylint, Stylelint
 
 ## 🔴 Live Demo
