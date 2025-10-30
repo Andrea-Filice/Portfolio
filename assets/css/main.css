@@ -52,14 +52,8 @@
   --contrast-color: #ffffff;
 }
 
-/* Smooth scroll */
-:root {
-  scroll-behavior: smooth;
-}
+:root {scroll-behavior: smooth;}
 
-/*--------------------------------------------------------------
-# General Styling & Shared Classes
---------------------------------------------------------------*/
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -88,8 +82,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
 .php-email-form .error-message {
   display: none;
   background: #df1529;
@@ -153,9 +145,7 @@ h6 {
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
-  .header~main {
-    margin-left: 160px;
-  }
+  .header~main {margin-left: 160px;}
 
   .header~main .hero {
     margin-left: -160px;
@@ -163,9 +153,7 @@ h6 {
   }
 }
 
-.header.header-show {
-  left: 0;
-}
+.header.header-show {left: 0;}
 
 .header .header-toggle {
   color: var(--contrast-color);
@@ -190,9 +178,6 @@ h6 {
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
 .navmenu {
   padding: 0;
   z-index: 9997;
@@ -223,26 +208,15 @@ h6 {
 }
 
 .navmenu a i,
-.navmenu a:focus i {
-  font-size: 20px;
-}
-
+.navmenu a:focus i {font-size: 20px;}
 .navmenu a span,
-.navmenu a:focus span {
-  padding: 0 5px 0 7px;
-}
+.navmenu a:focus span {padding: 0 5px 0 7px;}
 
 @media (min-width: 992px) {
-
   .navmenu a,
-  .navmenu a:focus {
-    max-width: 56px;
-  }
-
+  .navmenu a:focus {max-width: 56px;}
   .navmenu a span,
-  .navmenu a:focus span {
-    display: none;
-  }
+  .navmenu a:focus span {display: none;}
 }
 
 .navmenu a:hover,
@@ -260,13 +234,8 @@ h6 {
 }
 
 .navmenu a:hover span,
-.navmenu li:hover>a span {
-  display: block;
-}
+.navmenu li:hover>a span {display: block;}
 
-/*--------------------------------------------------------------
-# Global Footer
---------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -291,9 +260,7 @@ h6 {
   margin: 0 0 30px 0;
 }
 
-.footer .social-links {
-  margin: 0 0 30px 0;
-}
+.footer .social-links {margin: 0 0 30px 0;}
 
 .footer .social-links a {
   font-size: 16px;
@@ -326,9 +293,6 @@ h6 {
   padding-top: 5px;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
 #preloader {
   position: fixed;
   inset: 0;
@@ -352,13 +316,8 @@ h6 {
 }
 
 @keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
 }
 
 .scroll-top {
@@ -392,18 +351,12 @@ h6 {
   bottom: 15px;
 }
 
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
 
-/*--------------------------------------------------------------
-# Global Page Titles & Breadcrumbs
---------------------------------------------------------------*/
 .page-title {
   --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
   color: var(--default-color);
@@ -428,9 +381,7 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
-  padding-left: 10px;
-}
+.page-title .breadcrumbs ol li+li {padding-left: 10px;}
 
 .page-title .breadcrumbs ol li+li::before {
   content: "/";
@@ -439,9 +390,6 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-/*--------------------------------------------------------------
-# Global Sections
---------------------------------------------------------------*/
 section,
 .section {
   color: var(--default-color);
@@ -450,9 +398,6 @@ section,
   overflow: clip;
 }
 
-/*--------------------------------------------------------------
-# Global Section Titles
---------------------------------------------------------------*/
 .section-title {
   text-align: center;
   padding-bottom: 60px;
@@ -493,13 +438,8 @@ section,
   margin: auto;
 }
 
-.section-title p {
-  margin-bottom: 0;
-}
+.section-title p {margin-bottom: 0;}
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -549,9 +489,7 @@ section,
   border-bottom: 2px solid var(--accent-color);
 }
 
-.hero .social-links {
-  margin-top: 25px;
-}
+.hero .social-links {margin-top: 25px;}
 
 .hero .social-links a {
   font-size: 20px;
@@ -562,23 +500,12 @@ section,
   transition: 0.3s;
 }
 
-.hero .social-links a:hover {
-  color: var(--accent-color);
-}
-
+.hero .social-links a:hover {color: var(--accent-color);}
 @media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
-  }
-
-  .hero p {
-    font-size: 20px;
-  }
+  .hero h2 {font-size: 32px;}
+  .hero p {font-size: 20px;}
 }
 
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
@@ -595,9 +522,7 @@ section,
   align-items: center;
 }
 
-.about .content ul strong {
-  margin-right: 10px;
-}
+.about .content ul strong {margin-right: 10px;}
 
 .about .content ul i {
   font-size: 16px;
@@ -606,9 +531,6 @@ section,
   line-height: 0;
 }
 
-/*--------------------------------------------------------------
-# Stats Section
---------------------------------------------------------------*/
 .stats i {
   background-color: var(--accent-color);
   color: var(--contrast-color);
@@ -645,9 +567,6 @@ section,
   font-size: 16px;
 }
 
-/*--------------------------------------------------------------
-# Skills Section
---------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
   display: block;
@@ -682,9 +601,6 @@ section,
   background-color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Resume Section
---------------------------------------------------------------*/
 .resume .resume-title {
   color: var(--heading-color);
   font-size: 26px;
@@ -717,17 +633,9 @@ section,
   margin-bottom: 10px;
 }
 
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
+.resume .resume-item ul {padding-left: 20px;}
+.resume .resume-item ul li {padding-bottom: 10px;}
+.resume .resume-item:last-child {padding-bottom: 0;}
 
 .resume .resume-item::before {
   content: "";
@@ -741,9 +649,6 @@ section,
   border: 2px solid var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Portfolio Section
---------------------------------------------------------------*/
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -771,13 +676,8 @@ section,
   background-color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
-  margin-left: 0;
-}
-
-.portfolio .portfolio-filters li:last-child {
-  margin-right: 0;
-}
+.portfolio .portfolio-filters li:first-child {margin-left: 0;}
+.portfolio .portfolio-filters li:last-child {margin-right: 0;}
 
 @media (max-width: 575px) {
   .portfolio .portfolio-filters li {
@@ -828,9 +728,7 @@ section,
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: var(--accent-color);
-}
+.portfolio .portfolio-item .portfolio-info .details-link:hover {color: var(--accent-color);}
 
 .portfolio .portfolio-item .portfolio-info .details-link {
   right: 14px;
@@ -842,9 +740,6 @@ section,
   bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
@@ -895,85 +790,26 @@ section,
   margin-bottom: 0;
 }
 
-.services .service-item:hover {
-  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
-}
+.services .service-item:hover {box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);}
+.services .service-item.item-cyan i {color: #0dcaf0;}
+.services .service-item.item-cyan:hover .icon i {color: #fff;}
+.services .service-item.item-cyan:hover .icon path {fill: #0dcaf0;}
+.services .service-item.item-orange i {color: #fd7e14;}
+.services .service-item.item-orange:hover .icon i {color: #fff;}
+.services .service-item.item-orange:hover .icon path {fill: #fd7e14;}
+.services .service-item.item-teal i {color: #20c997;}
+.services .service-item.item-teal:hover .icon i {color: #fff;}
+.services .service-item.item-teal:hover .icon path {fill: #20c997;}
+.services .service-item.item-red i {color: #df1529;}
+.services .service-item.item-red:hover .icon i {color: #fff;}
+.services .service-item.item-red:hover .icon path {fill: #df1529;}
+.services .service-item.item-indigo i {color: #6610f2;}
+.services .service-item.item-indigo:hover .icon i {color: #fff;}
+.services .service-item.item-indigo:hover .icon path {fill: #6610f2;}
+.services .service-item.item-pink i {color: #f3268c;}
+.services .service-item.item-pink:hover .icon i {color: #fff;}
+.services .service-item.item-pink:hover .icon path {fill: #f3268c;}
 
-.services .service-item.item-cyan i {
-  color: #0dcaf0;
-}
-
-.services .service-item.item-cyan:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-cyan:hover .icon path {
-  fill: #0dcaf0;
-}
-
-.services .service-item.item-orange i {
-  color: #fd7e14;
-}
-
-.services .service-item.item-orange:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-orange:hover .icon path {
-  fill: #fd7e14;
-}
-
-.services .service-item.item-teal i {
-  color: #20c997;
-}
-
-.services .service-item.item-teal:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-teal:hover .icon path {
-  fill: #20c997;
-}
-
-.services .service-item.item-red i {
-  color: #df1529;
-}
-
-.services .service-item.item-red:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-red:hover .icon path {
-  fill: #df1529;
-}
-
-.services .service-item.item-indigo i {
-  color: #6610f2;
-}
-
-.services .service-item.item-indigo:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-indigo:hover .icon path {
-  fill: #6610f2;
-}
-
-.services .service-item.item-pink i {
-  color: #f3268c;
-}
-
-.services .service-item.item-pink:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-pink:hover .icon path {
-  fill: #f3268c;
-}
-
-/*--------------------------------------------------------------
-# Testimonials Section
---------------------------------------------------------------*/
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -1028,13 +864,9 @@ section,
   transform: scale(-1, -1);
 }
 
-.testimonials .testimonial-item p {
-  font-style: italic;
-}
+.testimonials .testimonial-item p {font-style: italic;}
 
-.testimonials .swiper-wrapper {
-  height: auto;
-}
+.testimonials .swiper-wrapper {height: auto;}
 
 .testimonials .swiper-pagination {
   margin-top: 30px;
@@ -1048,16 +880,9 @@ section,
   opacity: 1;
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {background-color: var(--accent-color);}
 
-/*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
-.contact .info-item+.info-item {
-  margin-top: 40px;
-}
+.contact .info-item+.info-item {margin-top: 40px;}
 
 .contact .info-item i {
   color: var(--accent-color);
@@ -1091,9 +916,7 @@ section,
   color: var(--contrast-color);
 }
 
-.contact .php-email-form {
-  height: 100%;
-}
+.contact .php-email-form {height: 100%;}
 
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
@@ -1109,15 +932,11 @@ section,
 
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-}
+.contact .php-email-form textarea:focus {border-color: var(--accent-color);}
 
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
+.contact .php-email-form textarea::placeholder {color: color-mix(in srgb, var(--default-color), transparent 70%);}
 
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
@@ -1128,20 +947,11 @@ section,
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
-}
+.contact .php-email-form button[type=submit]:hover {background: color-mix(in srgb, var(--accent-color), transparent 25%);}
 
-/*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
+.portfolio-details .portfolio-details-slider img {width: 100%;}
 
-.portfolio-details .swiper-wrapper {
-  height: auto;
-}
+.portfolio-details .swiper-wrapper {height: auto;}
 
 .portfolio-details .swiper-button-prev,
 .portfolio-details .swiper-button-next {
@@ -1164,9 +974,7 @@ section,
 }
 
 .portfolio-details .swiper-button-prev:hover:after,
-.portfolio-details .swiper-button-next:hover:after {
-  background-color: rgba(0, 0, 0, 0.3);
-}
+.portfolio-details .swiper-button-next:hover:after {background-color: rgba(0, 0, 0, 0.3);}
 
 @media (max-width: 575px) {
 
@@ -1188,9 +996,7 @@ section,
   opacity: 1;
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
+.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {background-color: var(--accent-color);}
 
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
@@ -1238,9 +1044,7 @@ section,
   transition: 0.3s;
 }
 
-.portfolio-details .portfolio-info .btn-visit:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-}
+.portfolio-details .portfolio-info .btn-visit:hover {background: color-mix(in srgb, var(--accent-color), transparent 20%);}
 
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
@@ -1248,9 +1052,7 @@ section,
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
+.portfolio-details .portfolio-description p {padding: 0;}
 
 .portfolio-details .portfolio-description .testimonial-item {
   padding: 30px 30px 0 30px;
@@ -1312,9 +1114,7 @@ section,
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.service-details .service-box+.service-box {
-  margin-top: 30px;
-}
+.service-details .service-box+.service-box {margin-top: 30px;}
 
 .service-details .service-box h4 {
   font-size: 20px;
@@ -1334,9 +1134,7 @@ section,
   transition: 0.3s;
 }
 
-.service-details .services-list a:first-child {
-  margin-top: 0;
-}
+.service-details .services-list a:first-child {margin-top: 0;}
 
 .service-details .services-list a i {
   font-size: 16px;
@@ -1382,9 +1180,7 @@ section,
   color: var(--accent-color);
 }
 
-.service-details .download-catalog a:hover {
-  color: var(--accent-color);
-}
+.service-details .download-catalog a:hover {color: var(--accent-color);}
 
 .service-details .help-box {
   background-color: var(--accent-color);
@@ -1393,9 +1189,7 @@ section,
   padding: 30px 15px;
 }
 
-.service-details .help-box .help-icon {
-  font-size: 48px;
-}
+.service-details .help-box .help-icon {font-size: 48px;}
 
 .service-details .help-box h4,
 .service-details .help-box a {
@@ -1433,13 +1227,8 @@ section,
   color: var(--accent-color);
 }
 
-#anim:hover{
-  cursor: pointer;
-}
-
-#anim::after{
-  cursor: default;
-}
+#anim:hover{cursor: pointer;}
+#anim::after{cursor: default;}
 
 .img-hidden {
   transform: scale(0.7);
@@ -1448,9 +1237,7 @@ section,
   will-change: transform, opacity, filter;
 }
 
-.img-visible{
-  animation: scaleIn 1.1s ease-in-out forwards;
-}
+.img-visible{animation: scaleIn 1.1s ease-in-out forwards;}
 
 @keyframes scaleIn{
   0% {
@@ -1464,3 +1251,5 @@ section,
     filter: blur(0);
   }
 }
+
+#profilePhoto{margin-left: 26px;}
