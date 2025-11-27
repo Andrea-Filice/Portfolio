@@ -7,7 +7,7 @@ I'm Andrea, a relentless and pragmatic developer passionate about automation, co
 - **Languages**: C#, Python, JavaScript, Java, HTML, CSS
 - **Frameworks**: .NET, Bootstrap, Electron
 - **CI/CD**: GitHub Actions
-- **Analysis**: CodeQL, ESLint, Pylint, Stylelint
+- **Analysis**: CodeQL
 
 ## 🔴 Live Demo
 You can vist the website from <a href="https://andrea-filice.github.io/Portfolio/">here</a>.
