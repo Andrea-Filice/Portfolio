@@ -4,7 +4,7 @@ I'm Andrea, a relentless and pragmatic developer passionate about automation, co
 
 ## 🛠 Technologies & Tools
 
-- **Languages**: C#, Python, JavaScript, Java, HTML, CSS
+- **Languages**: C#, Python, JavaScript, Java, HTML, CSS, Swift
 - **Frameworks**: .NET, Bootstrap, Electron
 - **CI/CD**: GitHub Actions
 - **Analysis**: CodeQL
